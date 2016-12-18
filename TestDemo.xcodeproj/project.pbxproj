@@ -10,7 +10,6 @@
 		5A0073241E03180600779C61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0073231E03180600779C61 /* main.m */; };
 		5A0073271E03180600779C61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0073261E03180600779C61 /* AppDelegate.m */; };
 		5A00732A1E03180600779C61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0073291E03180600779C61 /* ViewController.m */; };
-		5A00732D1E03180600779C61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A00732B1E03180600779C61 /* Main.storyboard */; };
 		5A00732F1E03180600779C61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A00732E1E03180600779C61 /* Assets.xcassets */; };
 		5A0073321E03180600779C61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0073301E03180600779C61 /* LaunchScreen.storyboard */; };
 		5A00733D1E03180600779C61 /* TestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A00733C1E03180600779C61 /* TestDemoTests.m */; };
@@ -33,13 +32,13 @@
 		5A0073261E03180600779C61 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5A0073281E03180600779C61 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5A0073291E03180600779C61 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5A00732C1E03180600779C61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A00732E1E03180600779C61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A0073311E03180600779C61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A0073331E03180600779C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A0073381E03180600779C61 /* TestDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A00733C1E03180600779C61 /* TestDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDemoTests.m; sourceTree = "<group>"; };
 		5A00733E1E03180600779C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A3C7E131E06784100D49CDC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +84,6 @@
 				5A0073261E03180600779C61 /* AppDelegate.m */,
 				5A0073281E03180600779C61 /* ViewController.h */,
 				5A0073291E03180600779C61 /* ViewController.m */,
-				5A00732B1E03180600779C61 /* Main.storyboard */,
 				5A00732E1E03180600779C61 /* Assets.xcassets */,
 				5A0073301E03180600779C61 /* LaunchScreen.storyboard */,
 				5A0073331E03180600779C61 /* Info.plist */,
@@ -98,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				5A0073231E03180600779C61 /* main.m */,
+				5A3C7E131E06784100D49CDC /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -193,7 +192,6 @@
 			files = (
 				5A0073321E03180600779C61 /* LaunchScreen.storyboard in Resources */,
 				5A00732F1E03180600779C61 /* Assets.xcassets in Resources */,
-				5A00732D1E03180600779C61 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +234,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5A00732B1E03180600779C61 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5A00732C1E03180600779C61 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5A0073301E03180600779C61 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -328,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -339,6 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = TestDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liu.TestDemo;
@@ -350,6 +341,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = TestDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liu.TestDemo;
@@ -400,6 +392,7 @@
 				5A0073431E03180600779C61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A0073441E03180600779C61 /* Build configuration list for PBXNativeTarget "TestDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +401,7 @@
 				5A0073461E03180600779C61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
