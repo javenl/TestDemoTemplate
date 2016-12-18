@@ -9,6 +9,7 @@ git clone git@github.com:javenl/TestDemoTemplate.git $(YourProjectName)
 
 2. Rename Project
 ```
+cd $(YourProjectName)
 python rename_project.py  . $(YourProjectName)
 ```
 
@@ -16,6 +17,7 @@ python rename_project.py  . $(YourProjectName)
 If I want to create a project named `TestCoreAnimation`.
 ```
 git clone git@github.com:javenl/TestDemoTemplate.git TestCoreAnimation
+cd TestCoreAnimation
 python rename_project.py  . TestCoreAnimation
 ```
 
